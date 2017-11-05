@@ -9,11 +9,17 @@ export default new Router({
   routes: [
     {
       path: '/home',
-      component: home
+      component: home,
+      meta: {
+        breadcrumb: 'Dashboard'
+      }
     },
     {
       path: '/home2',
-      component: homee
+      component: homee,
+      meta: {
+        breadcrumb: 'Dashboard2'
+      }
     }
   ]
 })
