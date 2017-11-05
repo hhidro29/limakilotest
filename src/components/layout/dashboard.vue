@@ -2,13 +2,13 @@
   <b-collapse is-nav id="nav_collapse">
       <b-col class="side-navbar">
           <b-nav class="flex-column header-nav">
-            <router-link v-on:click.native to="/"><b-nav-item >Dashboard</b-nav-item></router-link>
+            <router-link to="/home" class="nav-component">Dashboard</router-link>
             <b-nav-item v-b-toggle.menu1>Orderan</b-nav-item>
             <b-collapse id="menu1" class="sub-navbar">
               <router-link to="/a"><b-nav-item >item-1</b-nav-item></router-link>
               <router-link to="/a"><b-nav-item >item-2</b-nav-item></router-link>
             </b-collapse>
-            <router-link to="/home2"><b-nav-item >Pesanan</b-nav-item></router-link>
+            <router-link to="/home2" class="nav-component">Pesanan</router-link>
           </b-nav>
       </b-col>
     </b-collapse>
@@ -24,6 +24,10 @@ export default {
   a{
     color: white;
     text-decoration: none;
+  }
+
+  .nav-component{
+    padding: 10px 0 10px 15px;
   }
 
   .side-navbar{
