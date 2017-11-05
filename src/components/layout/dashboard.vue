@@ -3,12 +3,11 @@
       <b-col class="side-navbar">
           <b-nav class="flex-column header-nav">
             <router-link to="/home" class="nav-component">Dashboard</router-link>
-            <b-nav-item v-b-toggle.menu1>Orderan</b-nav-item>
-            <b-collapse id="menu1" class="sub-navbar">
-              <router-link to="/a"><b-nav-item >item-1</b-nav-item></router-link>
-              <router-link to="/a"><b-nav-item >item-2</b-nav-item></router-link>
-            </b-collapse>
             <router-link to="/home2" class="nav-component">Pesanan</router-link>
+            <router-link to="/home3" class="nav-component">Orderan</router-link>
+            <router-link to="/a" class="nav-component">item-1</router-link>
+            <router-link to="/b" class="nav-component">item-2</router-link>
+
           </b-nav>
       </b-col>
     </b-collapse>
@@ -48,6 +47,11 @@ export default {
   .sub-navbar{
     border-radius: 5px;
     background-color: white;
+  }
+
+  .sub-navbar-component{
+    display: block;
+    padding: 10px 0 10px 30px;
   }
 
   .sub-navbar a{
