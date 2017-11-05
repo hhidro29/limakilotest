@@ -2,13 +2,13 @@
   <b-collapse is-nav id="nav_collapse">
       <b-col class="side-navbar">
           <b-nav class="flex-column header-nav">
-            <b-nav-item class="active">Dashboard</b-nav-item>
+            <router-link v-on:click.native to="/"><b-nav-item >Dashboard</b-nav-item></router-link>
             <b-nav-item v-b-toggle.menu1>Orderan</b-nav-item>
             <b-collapse id="menu1" class="sub-navbar">
-              <b-nav-item >Sub-menu-1</b-nav-item>
-              <b-nav-item >Sub-menu-2</b-nav-item>
+              <router-link to="/a"><b-nav-item >item-1</b-nav-item></router-link>
+              <router-link to="/a"><b-nav-item >item-2</b-nav-item></router-link>
             </b-collapse>
-            <b-nav-item>Product</b-nav-item>
+            <router-link to="/home2"><b-nav-item >Pesanan</b-nav-item></router-link>
           </b-nav>
       </b-col>
     </b-collapse>
@@ -23,6 +23,7 @@ export default {
 <style lang="css" scoped>
   a{
     color: white;
+    text-decoration: none;
   }
 
   .side-navbar{
@@ -49,14 +50,13 @@ export default {
     color: #782F45;
   }
 
-  .active{
+  .router-link-active{
     background-color: #E47583;
   }
 
   @media screen and (max-width: 990px) {
     .side-navbar{
       padding-top: 160px;
-
     }
   }
 </style>

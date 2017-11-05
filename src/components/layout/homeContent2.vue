@@ -35,7 +35,7 @@ export default {
   data () {
     return {
       message: 'Lorem ipsum dolor sit amet.',
-      coba: 5,
+      coba: 3,
       posting: [
         {
           title: 'Pesanan'

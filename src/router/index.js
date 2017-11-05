@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import header from '@/components/layout/header'
-import dashboard from '@/components/layout/dashboard'
+import home from '@/components/layout/homeContent'
+import homee from '@/components/layout/homeContent2'
 
 Vue.use(Router)
 
@@ -9,13 +9,11 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'header',
-      component: header
+      component: home
     },
     {
-      path: '/',
-      name: 'dashboard',
-      component: dashboard
+      path: '/home',
+      component: homee
     }
   ]
 })

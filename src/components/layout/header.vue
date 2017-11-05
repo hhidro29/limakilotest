@@ -31,7 +31,7 @@
     </b-nav>
     </b-navbar>
       <b-navbar toggleable="lg">
-        <b-collapse is-nav id="nav_collapse" class="side-navbar">
+        <b-collapse is-nav id="nav_collapse">
           <Dash/>
         </b-collapse>
       </b-navbar>
